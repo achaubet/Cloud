@@ -10,8 +10,8 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 // Get the connection string and container name from environment variables
-const connectionString = "DefaultEndpointsProtocol=https;AccountName=projetcloudstorage;AccountKey=a0UZTXelnopqoSbXfzaKmBXQZzn12foAWSIrhgE2TjRtV+sxLxkzhNnx+HV82wA3hJcBQdktku23+AStfaiV3g==;EndpointSuffix=core.windows.net";
-const containerName = "profilepictures";
+const connectionString = ""; // Put your connection string here
+const containerName = "profilepictures"; // Name of your container blob
 
 // Create a BlobServiceClient object using the connection string
 const blobServiceClient = BlobServiceClient.fromConnectionString(connectionString);
